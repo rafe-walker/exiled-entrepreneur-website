@@ -86,11 +86,11 @@ const stats = [
 
 export default function Engine() {
   return (
-    <section className="py-20 px-4 bg-brand-dark relative overflow-hidden desert-texture">
+    <section className="py-20 bg-brand-dark relative overflow-hidden desert-texture">
       {/* Desert texture background */}
       <div className="absolute inset-0 desert-texture pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

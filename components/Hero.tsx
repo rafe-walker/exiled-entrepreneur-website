@@ -136,9 +136,9 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.5 }}
         whileHover={{ scale: 1.05, boxShadow: '0 20px 50px rgba(212, 168, 83, 0.2)' }}
         onClick={handleEpisodeClick}
-        className="absolute bottom-8 right-4 sm:bottom-12 sm:right-8 z-20 cursor-pointer group"
+        className="hidden lg:block absolute bottom-24 right-8 xl:right-16 z-20 cursor-pointer group"
       >
-        <div className="relative bg-brand-card border border-brand-border rounded-lg overflow-hidden w-56 sm:w-64 shadow-lg hover:border-brand-gold/50 transition-colors duration-300">
+        <div className="relative bg-brand-card border border-brand-border rounded-lg overflow-hidden w-56 shadow-lg hover:border-brand-gold/50 transition-colors duration-300">
           {/* Placeholder Video Thumbnail */}
           <div className="relative h-32 sm:h-36 bg-gradient-to-br from-brand-border to-brand-dark overflow-hidden">
             {/* Animated gradient background */}

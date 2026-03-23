@@ -77,6 +77,8 @@ export default function Navigation() {
           >
             {[
               { href: '/about', label: 'About' },
+              { href: '/episodes', label: 'Episodes' },
+              { href: '/resources', label: 'Resources' },
               { href: '/blog', label: 'Blog' },
               { href: '/contact', label: 'Contact' },
             ].map((link, index) => (
@@ -161,6 +163,8 @@ export default function Navigation() {
                 {/* Mobile Navigation Links */}
                 {[
                   { href: '/about', label: 'About' },
+                  { href: '/episodes', label: 'Episodes' },
+                  { href: '/resources', label: 'Resources' },
                   { href: '/blog', label: 'Blog' },
                   { href: '/contact', label: 'Contact' },
                 ].map((link, index) => (
