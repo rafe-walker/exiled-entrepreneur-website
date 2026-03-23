@@ -85,15 +85,17 @@ body {
   scrollbar-width: thin;
 }
 
-/* Link styles */
-a {
-  color: #d4a853;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
+/* Link styles — inside @layer base so Tailwind utilities can override */
+@layer base {
+  a {
+    color: #d4a853;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
 
-a:hover {
-  color: #e8c374;
+  a:hover {
+    color: #e8c374;
+  }
 }
 
 /* Heading hierarchy */
