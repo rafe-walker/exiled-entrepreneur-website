@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
@@ -15,30 +15,75 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Exiled Entrepreneur | From Corporate Layoff to Empire",
+  metadataBase: new URL("https://theexiledentrepreneur.com"),
+  title: {
+    default: "The Exiled Entrepreneur | One Guy. Laid Off. Building an Empire.",
+    template: "%s | The Exiled Entrepreneur",
+  },
   description:
-    "One guy. Laid off. Building an empire from scratch with AI, drones, and his own two hands. Follow Joshua's journey documenting empire building, AI automation, entrepreneurship, and off-grid construction.",
+    "From corporate layoff to 7 businesses, a 9-agent AI system, and a container house in the Arizona desert. Every win and failure — documented.",
   keywords: [
     "entrepreneurship",
     "AI automation",
-    "drones",
-    "off-grid living",
-    "container house",
     "business empire",
+    "layoff recovery",
+    "container house",
+    "off-grid living",
+    "drones",
     "founder journey",
+    "Open Claw IA",
+    "Stormhaven Enterprises",
+    "YouTube documentary",
+    "AI agents",
   ],
   authors: [{ name: "Joshua", url: "https://theexiledentrepreneur.com" }],
+  creator: "Stormhaven Enterprises LLC",
+  publisher: "Stormhaven Enterprises LLC",
   openGraph: {
-    title: "The Exiled Entrepreneur",
+    title: "The Exiled Entrepreneur | One Guy. Laid Off. Building an Empire.",
     description:
-      "One guy. Laid off. Building an empire from scratch with AI, drones, and his own two hands.",
+      "From corporate layoff to 7 businesses, a 9-agent AI system, and a container house in the Arizona desert. Every win and failure — documented.",
     type: "website",
     url: "https://theexiledentrepreneur.com",
     siteName: "The Exiled Entrepreneur",
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "The Exiled Entrepreneur — One Guy. Laid Off. Building an Empire.",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Exiled Entrepreneur",
+    description:
+      "From corporate layoff to 7 businesses, a 9-agent AI system, and a container house in the Arizona desert.",
+    images: ["/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://theexiledentrepreneur.com",
   },
 };
 
-export const viewport = "width=device-width, initial-scale=1";
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#0a0a0f",
+};
 
 export default function RootLayout({
   children,
@@ -50,10 +95,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
     >
-      <head>
-        <meta name="theme-color" content="#0a0a0f" />
-      </head>
-      <body className="min-h-screen flex flex-col bg-[#0a0a0f] text-[#f5f0e8]">
+      <body className="min-h-screen flex flex-col bg-brand-dark text-brand-cream">
         <Navigation />
         <main className="flex-1">{children}</main>
         <Footer />
