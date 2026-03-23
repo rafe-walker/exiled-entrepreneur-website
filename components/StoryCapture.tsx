@@ -112,17 +112,17 @@ export default function StoryCapture() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.15 }}
-                  className="relative"
+                  className={`relative flex ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'}`}
                 >
                   {/* Connector dot */}
-                  <div className="absolute left-1/2 -translate-x-1/2 top-0 hidden md:flex">
+                  <div className="absolute left-1/2 -translate-x-1/2 top-4 hidden md:flex z-10">
                     <div className="w-4 h-4 bg-brand-gold rounded-full border-4 border-brand-dark shadow-lg shadow-brand-gold/50" />
                   </div>
 
                   {/* Card content */}
                   <div
-                    className={`card-dark hover:shadow-lg hover:shadow-brand-gold/30 transition-all duration-300 ${
-                      index % 2 === 0 ? 'md:mr-auto md:pr-12 md:w-[calc(50%-20px)]' : 'md:ml-auto md:pl-12 md:w-[calc(50%-20px)]'
+                    className={`card-dark hover:shadow-lg hover:shadow-brand-gold/30 transition-all duration-300 w-full ${
+                      index % 2 === 0 ? 'md:pr-12 md:w-[45%]' : 'md:pl-12 md:w-[45%]'
                     }`}
                   >
                     <div className="flex gap-4 items-start">
