@@ -8,6 +8,10 @@ export const metadata: Metadata = {
     title: 'The Blog | The Exiled Entrepreneur',
     description: 'Articles on entrepreneurship, AI automation, container houses, and building a multi-business empire.',
     type: 'website',
+    url: 'https://theexiledentrepreneur.com/blog',
+  },
+  alternates: {
+    canonical: 'https://theexiledentrepreneur.com/blog',
   },
 };
 

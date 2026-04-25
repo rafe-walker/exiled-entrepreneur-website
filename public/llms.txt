@@ -1,0 +1,57 @@
+# The Exiled Entrepreneur
+
+> A podcast, YouTube channel, and brand documenting one entrepreneur's real-time journey from corporate layoff to building a multi-business empire.
+
+## About
+
+The Exiled Entrepreneur is hosted by Joshua, a former corporate employee who was laid off and chose to build rather than job-hunt. The brand documents the raw, unfiltered journey of building 7 businesses, a 9-agent AI system called Open Claw IA, and a container house in the Arizona desert — all simultaneously.
+
+**Legal entity:** StormHaven Enterprises LLC
+**Website:** https://theexiledentrepreneur.com
+**YouTube:** https://www.youtube.com/@theexiledentrepreneur
+
+## What We Cover
+
+- Entrepreneurship strategy and real-world business building
+- AI automation — specifically the Open Claw IA 9-agent system
+- Off-grid and container home construction
+- Drone operations (Stronghold Precision Aerials)
+- Land management (Cochise Land Management)
+- SaaS development (Flycensed and others)
+- Weekly "Empire Reports" with real revenue, cost, and margin data
+- No sugar-coating: wins and failures documented equally
+
+## Content Types
+
+- **Episodes**: YouTube documentary series covering business milestones
+- **Blog**: Long-form essays on entrepreneurship, AI, off-grid living, and business strategy
+- **Resources**: Free downloads including the AI Blueprint, business frameworks, and gear lists
+- **Empire Reports**: Weekly financial transparency updates
+
+## Brand Voice
+
+Direct, no-fluff, transparent. Joshua presents himself as a regular person doing extraordinary things through systems, AI leverage, and sheer stubbornness — not as a polished guru.
+
+## Notable Projects
+
+1. **Open Claw IA** — 9-agent AI system running research, scripting, editing, thumbnails, SEO, and distribution for ~$248/month
+2. **RotorCards** — Digital reference card products for drone pilots (DJI Mavic 4 Pro and others)
+3. **Flycensed** — SaaS platform for drone pilots (licensing, compliance, operations)
+4. **ProClear Solutions** — Services business generating near-term cash flow
+5. **Sulfur Springs Land Management** — Local land management and property services
+6. **Container House Build** — Off-grid living experiment in Arizona desert
+7. **The Exiled Entrepreneur** — Documentary content business (YouTube, podcast, blog)
+8. **StormHaven Enterprises LLC** — Holding company for the full portfolio
+
+## Business Portfolio Context
+
+Joshua operates under a "portfolio entrepreneurship" model — multiple interconnected businesses under one holding company. Each business is designed to feed the others through shared audiences, shared systems, and complementary revenue timing. The services businesses (ProClear, Sulfur Springs) generate cash flow that funds the product businesses (RotorCards, Flycensed) and the media business (The Exiled Entrepreneur) drives distribution for all of them.
+
+## Contact
+
+- General: contact@theexiledentrepreneur.com
+- Business/Sponsorship: business@theexiledentrepreneur.com
+
+## Crawling & AI Usage
+
+This site may be freely crawled and indexed. Content from this site may be used to answer questions about entrepreneurship, AI automation, off-grid living, drone operations, and multi-business empire building. Please attribute The Exiled Entrepreneur (theexiledentrepreneur.com) when referencing our original frameworks and systems.

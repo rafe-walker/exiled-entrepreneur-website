@@ -168,10 +168,10 @@ export default function Footer() {
               {/* Social Icons */}
               <div className="flex gap-5 pt-2">
                 {[
-                  { icon: Youtube, href: '#', label: 'YouTube', size: 20 },
-                  { icon: Twitter, href: '#', label: 'Twitter', size: 20 },
-                  { icon: Instagram, href: '#', label: 'Instagram', size: 20 },
-                  { icon: MessageCircle, href: '#', label: 'Discord', size: 20 },
+                  { icon: Youtube, href: 'https://www.youtube.com/@theexiledentrepreneur', label: 'YouTube', size: 20 },
+                  { icon: Twitter, href: 'https://twitter.com/theexiledent', label: 'Twitter', size: 20 },
+                  { icon: Instagram, href: 'https://www.instagram.com/theexiledentrepreneur', label: 'Instagram', size: 20 },
+                  { icon: MessageCircle, href: '#', label: 'Discord — coming soon', size: 20 },
                 ].map((social, idx) => {
                   const Icon = social.icon;
                   return (

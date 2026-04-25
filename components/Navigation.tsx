@@ -26,6 +26,7 @@ export default function Navigation() {
 
   return (
     <motion.nav
+      aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-brand-dark/80 backdrop-blur-md border-b border-brand-border'
@@ -111,7 +112,9 @@ export default function Navigation() {
             className="hidden md:block"
           >
             <motion.a
-              href="#"
+              href="https://www.youtube.com/@theexiledentrepreneur"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(212, 168, 83, 0.4)' }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-2 bg-brand-gold text-brand-dark font-semibold rounded-lg transition-all duration-200 text-sm tracking-wide hover:bg-brand-gold-light shadow-lg"
@@ -192,7 +195,9 @@ export default function Navigation() {
                   className="pt-4 border-t border-brand-border/50"
                 >
                   <motion.a
-                    href="#"
+                    href="https://www.youtube.com/@theexiledentrepreneur"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={handleLinkClick}
                     whileTap={{ scale: 0.95 }}
                     className="block w-full px-4 py-3 bg-brand-gold text-brand-dark font-semibold rounded-lg transition-all duration-200 text-center text-sm tracking-wide hover:bg-brand-gold-light shadow-md"

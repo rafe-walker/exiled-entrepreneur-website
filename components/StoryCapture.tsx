@@ -39,43 +39,18 @@ export default function StoryCapture() {
 
   const handleEmailSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setFormState({ status: 'submitting', message: '' });
 
-    try {
-      const response = await fetch('https://formspree.io/f/placeholder', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          type: 'empire-blueprint',
-        }),
-      });
-
-      if (response.ok) {
-        setFormState({
-          status: 'success',
-          message:
-            'Check your email for the Empire Blueprint — no spam, just pure value.',
-        });
-        setEmail('');
-        setTimeout(() => {
-          setFormState({ status: 'idle', message: '' });
-        }, 5000);
-      } else {
-        setFormState({
-          status: 'error',
-          message: 'Something went wrong. Please try again.',
-        });
-      }
-    } catch (error) {
-      setFormState({
-        status: 'error',
-        message:
-          'Failed to subscribe. Check your connection and try again.',
-      });
-    }
+    // TODO: Replace with a real Formspree form ID before launch.
+    // Sign up at https://formspree.io, create a form, and replace the endpoint.
+    // e.g. https://formspree.io/f/xabc1234
+    setFormState({
+      status: 'error',
+      message:
+        'Sign-up coming soon! Follow on YouTube for the latest updates while we get this ready.',
+    });
+    setTimeout(() => {
+      setFormState({ status: 'idle', message: '' });
+    }, 6000);
   };
 
   return (

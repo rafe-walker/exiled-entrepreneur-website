@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://theexiledentrepreneur.com/sitemap.xml
+
+# AI/LLM information
+# https://theexiledentrepreneur.com/llms.txt

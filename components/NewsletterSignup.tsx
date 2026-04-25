@@ -12,30 +12,12 @@ export default function NewsletterSignup() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('loading');
 
-    try {
-      const response = await fetch('https://formspree.io/f/PLACEHOLDER', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, type: 'newsletter' }),
-      });
-
-      if (response.ok) {
-        setStatus('success');
-        setMessage('Thanks for subscribing! Check your email for confirmation.');
-        setEmail('');
-        setTimeout(() => setStatus('idle'), 5000);
-      } else {
-        setStatus('error');
-        setMessage('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      setStatus('error');
-      setMessage('Failed to subscribe. Please try again.');
-    }
+    // TODO: Replace with a real Formspree form ID before launch.
+    // Sign up at https://formspree.io, create a form, and replace the endpoint.
+    // e.g. https://formspree.io/f/xabc1234
+    setStatus('error');
+    setMessage('Newsletter sign-up coming soon! Follow on YouTube in the meantime.');
   };
 
   return (

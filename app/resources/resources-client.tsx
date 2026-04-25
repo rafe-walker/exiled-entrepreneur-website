@@ -55,6 +55,7 @@ export default function ResourcesClient() {
     2: { isOpen: false, email: '' },
     4: { isOpen: false, email: '' },
   });
+  const [submitMessages, setSubmitMessages] = useState<Record<number, { type: 'success' | 'error'; text: string }>>({});
 
   const toggleGatedForm = (resourceId: number) => {
     setGatedState((prev) => ({
@@ -80,38 +81,45 @@ export default function ResourcesClient() {
     const email = gatedState[resourceId].email;
     if (!email) return;
 
-    // Submit to Formspree (placeholder URL)
-    const formData = new FormData();
-    formData.append('email', email);
-    formData.append('resource_id', resourceId.toString());
-
-    fetch('https://formspree.io/f/YOUR_FORM_ID', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        Accept: 'application/json',
+    // TODO: Replace with a real Formspree form ID before launch.
+    // Sign up at https://formspree.io, create a form, and replace the endpoint.
+    // e.g. https://formspree.io/f/xabc1234
+    setSubmitMessages((prev) => ({
+      ...prev,
+      [resourceId]: {
+        type: 'error',
+        text: 'Resource delivery coming soon! Email contact@theexiledentrepreneur.com to get early access.',
       },
-    })
-      .then(() => {
-        // Reset form and show success
-        setGatedState((prev) => ({
-          ...prev,
-          [resourceId]: {
-            ...prev[resourceId],
-            email: '',
-            isOpen: false,
-          },
-        }));
-        alert('Success! Check your email for access.');
-      })
-      .catch(() => {
-        alert('There was an issue. Please try again.');
+    }));
+    setTimeout(() => {
+      setSubmitMessages((prev) => {
+        const next = { ...prev };
+        delete next[resourceId];
+        return next;
       });
+      setGatedState((prev) => ({
+        ...prev,
+        [resourceId]: { ...prev[resourceId], isOpen: false },
+      }));
+    }, 5000);
   };
 
   const handleFreeDownload = () => {
-    // Placeholder for free download
-    alert('Download will start shortly. (Placeholder - implement actual download)');
+    // TODO: Replace with a real download URL or file once ready.
+    setSubmitMessages((prev) => ({
+      ...prev,
+      3: {
+        type: 'error',
+        text: 'Download coming soon! Email contact@theexiledentrepreneur.com to request early access.',
+      },
+    }));
+    setTimeout(() => {
+      setSubmitMessages((prev) => {
+        const next = { ...prev };
+        delete next[3];
+        return next;
+      });
+    }, 5000);
   };
 
   return (
@@ -227,6 +235,21 @@ export default function ResourcesClient() {
                     )}
                   </>
                 )}
+
+                {/* Inline submission message (replaces alert()) */}
+                {submitMessages[resource.id] && (
+                  <motion.p
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className={`mt-3 text-sm font-medium ${
+                      submitMessages[resource.id].type === 'success'
+                        ? 'text-brand-green'
+                        : 'text-brand-amber'
+                    }`}
+                  >
+                    {submitMessages[resource.id].text}
+                  </motion.p>
+                )}
               </div>
             </motion.div>
           ))}
@@ -282,7 +305,7 @@ export default function ResourcesClient() {
               Read the Blog
             </a>
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@theexiledentrepreneur"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 border-2 border-brand-gold text-brand-gold font-bold rounded-lg hover:bg-brand-gold hover:text-brand-dark transition-colors"

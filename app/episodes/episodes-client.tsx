@@ -276,7 +276,7 @@ export default function EpisodesClient() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/@theexiledentrepreneur"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-brand-gold text-brand-dark font-bold rounded-lg hover:bg-brand-gold-light transition-colors"

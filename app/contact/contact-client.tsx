@@ -12,32 +12,14 @@ export default function ContactClient() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus('submitting');
 
-    const formData = new FormData(e.currentTarget);
-
-    try {
-      const response = await fetch('https://formspree.io/f/PLACEHOLDER', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          Accept: 'application/json',
-        },
-      });
-
-      if (response.ok) {
-        setStatus('success');
-        setMessage("Message sent! I'll get back to you within 24-48 hours.");
-        e.currentTarget.reset();
-        setTimeout(() => setStatus('idle'), 5000);
-      } else {
-        setStatus('error');
-        setMessage('Something went wrong. Please try again or email directly.');
-      }
-    } catch (error) {
-      setStatus('error');
-      setMessage('Failed to send message. Please try again or email directly.');
-    }
+    // TODO: Replace with a real Formspree form ID before launch.
+    // Sign up at https://formspree.io, create a form, and replace the endpoint below.
+    // e.g. https://formspree.io/f/xabc1234
+    setStatus('error');
+    setMessage(
+      'The contact form is coming soon. For now, please email contact@theexiledentrepreneur.com directly.'
+    );
   };
 
   const containerVariants = {

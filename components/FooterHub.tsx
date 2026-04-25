@@ -63,33 +63,16 @@ export default function FooterHub() {
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setFormStatus('submitting');
 
-    try {
-      const response = await fetch('https://formspree.io/f/placeholder', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      if (response.ok) {
-        setFormStatus('success');
-        setFormMessage('Thanks for subscribing! Check your email for confirmation.');
-        setEmail('');
-        setTimeout(() => {
-          setFormStatus('idle');
-          setFormMessage('');
-        }, 5000);
-      } else {
-        setFormStatus('error');
-        setFormMessage('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      setFormStatus('error');
-      setFormMessage('Failed to subscribe. Please try again.');
-    }
+    // TODO: Replace with a real Formspree form ID before launch.
+    // Sign up at https://formspree.io, create a form, and replace the endpoint.
+    // e.g. https://formspree.io/f/xabc1234
+    setFormStatus('error');
+    setFormMessage('Newsletter sign-up coming soon! Subscribe on YouTube in the meantime.');
+    setTimeout(() => {
+      setFormStatus('idle');
+      setFormMessage('');
+    }, 6000);
   };
 
   const toggleFAQ = (index: number) => {
@@ -163,7 +146,9 @@ export default function FooterHub() {
 
             {/* YouTube Subscribe Button */}
             <motion.a
-              href="#"
+              href="https://www.youtube.com/@theexiledentrepreneur"
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -217,6 +202,8 @@ export default function FooterHub() {
                   {/* FAQ Header - Clickable */}
                   <button
                     onClick={() => toggleFAQ(index)}
+                    aria-expanded={openIndex === index}
+                    aria-controls={`faq-answer-${item.id}`}
                     className="w-full flex items-center justify-between gap-4 text-left py-1 focus:outline-none transition-all duration-300"
                   >
                     <h4 className="text-lg font-semibold text-brand-cream group-hover:text-brand-gold transition-colors duration-300 pr-4 flex-1">
@@ -236,6 +223,8 @@ export default function FooterHub() {
 
                   {/* FAQ Answer - Expandable */}
                   <motion.div
+                    id={`faq-answer-${item.id}`}
+                    role="region"
                     initial={false}
                     animate={{
                       height: openIndex === index ? 'auto' : 0,
