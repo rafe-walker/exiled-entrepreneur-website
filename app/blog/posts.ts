@@ -13,6 +13,90 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'anyone-else-just-trying-to-connect-with-real-founders-and-builders-on-here',
+    title: "Anyone else just trying to connect with real founders and builders on here?",
+    excerpt: "Not selling anything, not dropping links, just genuinely want to talk to people who are actually building stuff.\n\nSaaS, AI tools, early stage startups, side projects  whatever you're working on drop it below and I'll actually read and reply.\n\nTired of the noise on here. Just want real conversations ",
+    content: `<div class="blog-content">
+  <p>I saw that post on r/SaaS the other day. Someone just asking—no pitch, no affiliate link, no "growth hacking" playbook to sell—just: <em>Can we talk about what we're actually building?</em></p>
+  <p>The responses came fast. Dozens of founders. All saying the same thing: <em>Yes. Please. Finally.</em></p>
+  <p>That hit different.</p>
+  <p>Because here's what nobody tells you when you leave corporate and start building your own thing: the isolation is real, and it's not the kind you solve by going to a coworking space or joining another Slack community full of people selling courses about joining Slack communities.</p>
+  <p>I've been there. Still am, honestly. You're running multiple businesses, managing an AI system that's supposed to handle your operations, living in a container house in the Arizona desert—and somehow you're lonelier than you've ever been. The people around you don't get it. The internet is full of noise. And the few conversations that feel real? They're getting harder to find.</p>
+  <h2>The Signal-to-Noise Ratio Has Collapsed</h2>
+  <p>When I first started after the layoff, there were forums. Real ones. Places where you could ask a question and get an actual answer from someone who'd been through it.</p>
+  <p>Now? Every platform is optimized for engagement, which means optimized for outrage, hype, and people selling something. LinkedIn is a highlight reel. Twitter is a dopamine casino. Facebook groups are half bots and half people trying to recruit you into their MLM.</p>
+  <p>Even on Reddit—which still has pockets of authenticity—you have to wade through:</p>
+  <ul>
+  <li>Fake success stories (written by copywriters, not founders)</li>
+  <li>Engagement bait ("Unpopular opinion: you should actually work on your business")</li>
+  <li>People asking questions they could Google in 30 seconds</li>
+  <li>The inevitable link droppers and course sellers</li>
+  </ul>
+  <p>The signal-to-noise ratio has gotten so bad that when someone posts, "I just want to talk to real people," it gets hundreds of upvotes. Because that's become <em>noteworthy</em>. That's become <em>rare</em>.</p>
+  <p>That should tell you something.</p>
+  <h2>Why Founders Are Starving for Real Conversation</h2>
+  <p>There's a paradox in entrepreneurship that nobody really talks about: you're surrounded by people, but you can't talk to any of them.</p>
+  <p>Your employees? You can't fully vent about the business struggles. Your family? They don't understand why you'd leave a stable job to build something uncertain. Your friends from corporate? They think you're crazy. Other founders? They're either your competitors, or they're so far ahead or behind you that the conversation feels hollow.</p>
+  <p>So you end up isolated. You're making decisions that affect your life, your family, your future—and you're making them alone.</p>
+  <p>I've built five businesses. I run a 9-agent AI system. I'm literally building a house from containers in the desert. And there are still days where I feel like I'm the only person who understands what I'm doing.</p>
+  <p>The difference is, I've learned to seek out real conversations intentionally. And I've learned what they look like.</p>
+  <p>Real conversations don't have a sales pitch. They don't end with a link to a free trial or a webinar. They don't optimize for "engagement metrics." They're messy. They're specific. They're about the actual problem you're facing on Tuesday at 3 AM, not the polished version of your business you present at conferences.</p>
+  <p>That's what that Reddit post was asking for. And that's what's become genuinely hard to find.</p>
+  <h2>The Founder's Dilemma: Who Can You Actually Trust?</h2>
+  <p>Here's the thing I've realized: the people worth talking to are usually too busy building to spend time on social media.</p>
+  <p>The real founders—the ones actually shipping, actually iterating, actually making decisions in real time—they're not on Reddit asking for validation. They're not on Twitter threads explaining their methodology. They're working.</p>
+  <p>So the people who <em>are</em> talking? They're either:</p>
+  <ol>
+  <li><strong>Selling something</strong> (and the talking is just the funnel)</li>
+  <li><strong>Seeking validation</strong> (and the conversation is one-directional)</li>
+  <li><strong>Building their personal brand</strong> (and the authenticity is strategic)</li>
+  <li><strong>Actually building</strong> (and they're rare enough that finding them feels like luck)</li>
+  </ol>
+  <p>The fourth category is what that Reddit post was hunting for. And the fact that it resonated with so many people tells me there's real hunger for it.</p>
+  <p>I get DMs sometimes from people who've watched my stuff—on YouTube, on the podcast, on here. And the best conversations happen when someone stops trying to pitch me on their idea and just says: <em>I'm stuck on this one thing. You've been there. What did you learn?</em></p>
+  <p>That's the conversation I want. That's the conversation most founders want.</p>
+  <h2>What Real Conversation Actually Looks Like</h2>
+  <p>After the layoff, I had to rebuild everything from scratch. No network. No credibility in the startup world. No safety net.</p>
+  <p>The conversations that mattered were the ones where someone said, "I failed at that too," and then told me <em>why</em>, not the sanitized version they tell at conferences.</p>
+  <p>A real conversation about business:</p>
+  <ul>
+  <li>Acknowledges that you don't have all the answers</li>
+  <li>Asks specific questions, not generic ones</li>
+  <li>Shares failures, not just wins</li>
+  <li>Ends with something you didn't know before</li>
+  <li>Doesn't try to sell you anything at the end</li>
+  </ul>
+  <p>When I built the AI system, the conversations that actually helped were with other founders who were also trying to automate their operations. Not the AI companies trying to sell me their platform. Not the gurus explaining why AI is the future. The other builders, asking: <em>How are you handling this specific bottleneck?</em></p>
+  <p>That's where the real learning happens.</p>
+  <h2>Building Your Own Circle of Real Founders</h2>
+  <p>The problem with waiting for Reddit or Twitter or LinkedIn to serve you real conversations is that you're relying on algorithms designed to do the opposite.</p>
+  <p>What I've learned is that you have to build your own circle. Not a mastermind group (too formal, too much posturing). Not a Slack community (too noisy). Just a small group of people who are actually building something, who get what you're trying to do, and who will tell you the truth.</p>
+  <p>That's harder than it sounds. It requires:</p>
+  <ul>
+  <li>Being willing to reach out to people without an angle</li>
+  <li>Sharing your struggles before you share your wins</li>
+  <li>Asking real questions and listening to real answers</li>
+  <li>Showing up consistently, not just when you need something</li>
+  </ul>
+  <p>But it's the only way I've found to have conversations that actually move the needle.</p>
+  <h2>The Real Opportunity</h2>
+  <p>That Reddit post—the one asking for real conversations—it has hundreds of replies. Hundreds of founders saying, <em>Yes, I want this too.</em></p>
+  <p>What if you actually took that seriously? What if you picked five of those people and had a real conversation with them?</p>
+  <p>Not to network. Not to collaborate (yet). Not to sell anything. Just to understand what they're building and why it matters to them.</p>
+  <p>I've done that. It's changed how I think about my own work.</p>
+  <p>The isolation you feel as a founder isn't because you're alone. It's because you're surrounded by noise. The solution isn't another community or another platform. It's finding the few people who are actually building something real and having a real conversation.</p>
+  <p>Start there. Find your people. And if you're building something—whether it's a SaaS, an AI system, a side project, or a container house in the Arizona desert—document it. Share the real version, not the polished one. Because somewhere out there, someone is starving for that conversation.</p>
+  <p>That's where the real growth happens. Not in the metrics. In the conversation.</p>
+  <p>If you're building something and you want to talk about it—no pitch, no agenda—I'm listening. Drop it below, or reach out. I actually read and reply. And if you want to go deeper on how to build a real business without the noise, I'm doing a full breakdown on the YouTube channel. Real case studies, real numbers, real lessons from building multiple businesses in parallel.</p>
+  </div>`,
+    date: '2026-05-01',
+    readTime: '7 min read',
+    category: 'Founder Notes',
+    author: 'The Exiled Entrepreneur',
+    featuredImage: '/blog/anyone-else-just-trying-to-connect-with-real-founders-and-builders-on-here.webp',
+    youtubeId: ''
+  },
+  {
     slug: 'what-task-are-you-delegating-the-most-as-a-saas-founder',
     title: "what task are you delegating the most as a saas founder",
     excerpt: "hey saas sub\n\nI am working with the team at\u00a0[joinpond.ai](https://joinpond.ai/)\u00a0right now. it's a platform helping early-stage startups &amp; crypto projects get from MVP to revenue. One of the features is a bounty system where founders can post tasks and involve the community to get them done, co",
