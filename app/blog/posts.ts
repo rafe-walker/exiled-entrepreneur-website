@@ -13,6 +13,62 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'what-task-are-you-delegating-the-most-as-a-saas-founder',
+    title: "what task are you delegating the most as a saas founder",
+    excerpt: "hey saas sub\n\nI am working with the team at\u00a0[joinpond.ai](https://joinpond.ai/)\u00a0right now. it's a platform helping early-stage startups &amp; crypto projects get from MVP to revenue. One of the features is a bounty system where founders can post tasks and involve the community to get them done, co",
+    content: `<div class="blog-content">
+  <p>There's a moment in every founder's journey when you realize you're the bottleneck. Not because you're incompetent. Because you're doing too much.</p>
+  <p>For me, that moment came at 3 AM on a Thursday, staring at a spreadsheet of customer support tickets while my AI system was supposed to be handling them. I wasn't tired because I'd been building features. I was tired because I'd been answering the same onboarding questions for the hundredth time.</p>
+  <p>That's when I made the decision that changed everything: I stopped doing customer support myself.</p>
+  <p>It sounds obvious now. But when you're bootstrapping a SaaS, when every dollar matters, when you're terrified of losing control of the customer experience—the idea of handing off that work feels like failure. It's not. It's the opposite.</p>
+  <h2>The Illusion of Control</h2>
+  <p>When I started my first SaaS, I was obsessed with being the face of customer support. I thought it proved I cared. I thought it gave me an unfair advantage—direct feedback, customer intimacy, the ability to catch churn before it happened.</p>
+  <p>What it actually did was trap me in a loop of reactive work that prevented me from doing anything strategic.</p>
+  <p>I was answering the same questions. Building the same workarounds. Explaining the same features. Every. Single. Day.</p>
+  <p>Meanwhile, the actual product roadmap was stalling. Feature requests were piling up. And I was getting worse at both support <em>and</em> product development because I was context-switching between them constantly.</p>
+  <p>The Reddit thread on r/SaaS asking what task founders are delegating most tells you everything you need to know. The overwhelming answer? Customer support and onboarding. And there's a reason: these tasks are high-frequency, low-leverage, and infinitely scalable once you systematize them.</p>
+  <h2>Why Support Is the First Thing to Delegate</h2>
+  <p>Customer support is the easiest task to delegate because it has the clearest playbook. You can document it. You can train for it. You can measure it. Unlike strategy or product vision, there's no secret sauce.</p>
+  <p>The second reason is psychological. Delegating support forces you to confront something uncomfortable: your customers don't need <em>you</em>. They need <em>solutions</em>. And if you're the only one who can provide those solutions, you've built a job, not a business.</p>
+  <p>When I finally hired someone to manage support, two things happened:</p>
+  <p>First, response times improved. My replacement was faster because they weren't juggling five other things. They had systems. Templates. A clear workflow. I'd been winging it, trying to personalize every response, which actually made things slower and less consistent.</p>
+  <p>Second, I got my time back. And that time—the 10-15 hours a week I'd been burning on support—went into building features that actually moved the needle.</p>
+  <h2>The Bounty Model: A New Way to Delegate</h2>
+  <p>There's an emerging pattern in how founders are solving the delegation problem, and it's worth paying attention to. Platforms like Pond are creating a hybrid model where early-stage founders can post specific tasks—documentation, design work, community management, even technical implementation—and let a community of freelancers bid on them.</p>
+  <p>The advantage over traditional hiring: you don't need to commit to full-time headcount. You post a task, get it done, and move on. No onboarding overhead. No salary commitment. No management burden.</p>
+  <p>For a SaaS founder, this is perfect for the 20% of tasks that don't require deep institutional knowledge. Customer support training documentation. Landing page copy. Basic design work. Community management. These are things you need done, but they don't require you to do them.</p>
+  <p>The risk is obvious: quality control and consistency. But that's solvable with clear specifications and templates. And honestly, a mediocre task done by someone else is better than a perfect task that never gets done because you're too busy.</p>
+  <h2>What I Actually Do Now</h2>
+  <p>Here's what my time looks like these days:</p>
+  <p><strong>What I don't do:</strong> Customer support. Email filtering. Scheduling. Social media posting. Invoice processing. Basic content editing.</p>
+  <p><strong>What I still do:</strong> Product decisions. Customer interviews (but structured ones, not reactive support chats). Strategy. Building and training the AI agents that run my businesses. Hiring and firing. Deal-making.</p>
+  <p>The first list is delegated. The second list is what I'm irreplaceable for.</p>
+  <p>The difference in my productivity has been staggering. I'm not tired anymore. I'm not context-switching. I'm not resentful about the business because I'm not drowning in operational tasks.</p>
+  <p>And here's the thing nobody tells you: your customers don't care that it's you answering their support ticket. They care that their problem gets solved. Fast. Consistently. Professionally.</p>
+  <p>Once I accepted that, everything changed.</p>
+  <h2>The Real Cost of Not Delegating</h2>
+  <p>The founder who doesn't delegate is making a bet that their time is worth less than the cost of paying someone else to do the work. That's mathematically wrong if you're generating revenue.</p>
+  <p>If you're making $5,000 a month in revenue and spending 20 hours a week on support, you're essentially paying yourself $250 an hour for work that a $20/hour contractor could do just as well.</p>
+  <p>The math doesn't work. It never works.</p>
+  <p>But there's a deeper cost: opportunity cost. Those 20 hours could have gone into sales. Into product development. Into building systems that scale. Into the work that actually grows the business.</p>
+  <p>Every hour you spend on a delegable task is an hour you're not spending on the thing only you can do.</p>
+  <h2>Start Small, But Start Now</h2>
+  <p>If you're still doing customer support yourself, here's my advice: don't wait until you're drowning. Start delegating now, while you still have time to do it right.</p>
+  <p>Pick one task. Document it. Write down exactly how you do it. Create a template. Then find someone—through a bounty platform, through a freelancer marketplace, through your network—and hand it off.</p>
+  <p>You'll be nervous. You'll want to check their work constantly. You'll find yourself rewriting their responses.</p>
+  <p>Do it anyway. Let go. They'll figure it out. And you'll get your time back.</p>
+  <p>That's how you go from a job you're trapped in to a business you're building. That's how you scale beyond yourself.</p>
+  <p>Because the truth is this: you're not irreplaceable at customer support. But you might be irreplaceable at the thing that actually grows your company. You'll never find out if you're too busy answering onboarding questions.</p>
+  <p>Stop doing the work that doesn't require you. Start building the thing that only you can build. Your business will thank you for it.</p>
+  </div>`,
+    date: '2026-05-01',
+    readTime: '6 min read',
+    category: 'Founder Notes',
+    author: 'The Exiled Entrepreneur',
+    featuredImage: '/blog/what-task-are-you-delegating-the-most-as-a-saas-founder.webp',
+    youtubeId: ''
+  },
+  {
     slug: 'what-is-the-stupidest-simplest-business-i-cannot-possibly-fuck-up',
     title: "What is the stupidest, simplest business I cannot possibly fuck up?",
     excerpt: "I've been a cofounder of multiple tech startups, never had an exit. I have an MBA and have been a consultant. Ran a couple of 1-person small businesses in high school/college, just barely scraped by enough revenue to survive with a roof over my head. My current business is bootstrapped and is costin",
