@@ -13,6 +13,81 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: 'what-is-the-stupidest-simplest-business-i-cannot-possibly-fuck-up',
+    title: "What is the stupidest, simplest business I cannot possibly fuck up?",
+    excerpt: "I've been a cofounder of multiple tech startups, never had an exit. I have an MBA and have been a consultant. Ran a couple of 1-person small businesses in high school/college, just barely scraped by enough revenue to survive with a roof over my head. My current business is bootstrapped and is costin",
+    content: `<div class="blog-content">
+  <p>I saw the question pop up on Reddit last week. Someone asking, flat out: "What is the stupidest, simplest business I cannot possibly fuck up?"</p>
+  <p>And I get it. I really do.</p>
+  <p>By the time you've been through a few startup cycles—failed exits, bootstrapped chaos, the constant pressure to scale—you start to wonder if maybe the answer isn't more complexity. Maybe it's less. Maybe it's so stupid simple that the only way to fail is to actively sabotage it.</p>
+  <p>Here's what I've learned from running five businesses while simultaneously building a 9-agent AI system and designing a container house in the Arizona desert: the businesses that don't fail aren't the ones with the cleverest product or the most innovative positioning. They're the ones where the unit economics are so obvious that you can't hide from them, and the customer acquisition is so direct that you can't bullshit your way through the numbers.</p>
+  <h2>The Problem With "Smart" Businesses</h2>
+  <p>When I left corporate, I had an MBA. I'd been a consultant. I understood frameworks, market sizing, competitive positioning. And you know what? Every business idea I got excited about had some fatal flaw that only revealed itself after six months of work.</p>
+  <p>The problem wasn't the ideas. It was that I was optimizing for the wrong thing.</p>
+  <p>I was optimizing for <em>interesting</em>. For something I could pitch at a dinner party. For something that felt like it deserved to exist because it was clever.</p>
+  <p>But a business doesn't care if it's clever. A business cares if someone will pay you money, repeatedly, for something that costs you less to provide.</p>
+  <p>That's it. That's the entire equation.</p>
+  <p>The stupidest businesses—the ones that actually work—are the ones where this equation is so transparent that you can't fool yourself. Where the customer need is so obvious that you don't need a 40-slide deck to explain it. Where the margin is so fat that you can make mistakes and still survive.</p>
+  <h2>Service Businesses Are Stupidly Simple (If You Price Them Right)</h2>
+  <p>Let me be direct: if you're scared of fucking up, service businesses are your answer.</p>
+  <p>Not because they're glamorous. Not because they scale infinitely. But because the feedback loop is immediate and the math is undeniable.</p>
+  <p>You do work. Customer pays you. You make money. If you do more work, you make more money. If you do better work, you can charge more money.</p>
+  <p>There's no inventory to manage. There's no algorithm that changes overnight and kills your traffic. There's no venture capital partner questioning your unit economics in a board meeting.</p>
+  <p>The businesses I've seen work best in this category—and I'm talking about actual, profitable, boring businesses—are:</p>
+  <ul>
+  <li><strong>Specialized cleaning services</strong> (carpet, commercial, post-construction). Recurring customers, high margins, low barrier to entry. The stupid part: most people think they need a fancy app or a brand. They don't. They need to show up on time and do good work.</li>
+  <li><strong>Handyman/contractor work in a specific niche</strong> (drywall repair, deck building, bathroom remodels). Same principle. You get good at one thing, you charge $100-150/hour, and you book out months in advance.</li>
+  <li><strong>Virtual assistant work for small business owners</strong>. This one's been exploding. Small business owners are drowning in administrative work. They'll pay $20-30/hour for someone to handle email, scheduling, and basic bookkeeping. You can do this from anywhere. You scale by hiring other VAs.</li>
+  <li><strong>Local service arbitrage</strong> (pressure washing, window cleaning, gutter cleaning). I know this sounds boring. It is. It's also profitable. You buy equipment for $500-2000, you charge $300-500 per job, and you can do 3-4 jobs a week. Do the math.</li>
+  </ul>
+  <h2>Why These Businesses Don't Fail</h2>
+  <p>Here's the thing about stupidly simple businesses: they fail for only three reasons, and all three are under your control.</p>
+  <p><strong>First: you price too low.</strong> This is the most common mistake. You're afraid to charge what you're worth because you don't feel like you've "earned" the right to charge real money. You have. A business that saves someone five hours a week and costs them $300 is a bargain. Charge accordingly.</p>
+  <p><strong>Second: you don't actually do the work.</strong> This sounds obvious, but I've watched entrepreneurs start service businesses and then immediately try to systematize and scale before they've actually done the work themselves. You need to do at least 20-30 jobs yourself. You need to know where the friction is, where you can cut corners without sacrificing quality, and what the real time investment is. Then you can delegate or hire.</p>
+  <p><strong>Third: you pick a market with no money.</strong> If you're offering a service, make sure your customer has money to pay for it. Offering bookkeeping services to broke solopreneurs? Bad market. Offering bookkeeping services to contractors and small business owners making $100k+ per year? Good market. They have cash flow. They have the budget.</p>
+  <h2>The AI Angle (And Why It Matters Even for Simple Businesses)</h2>
+  <p>Here's where I'm going to plug my own experience, because it's relevant.</p>
+  <p>When I built my 9-agent AI system, I wasn't trying to replace the work. I was trying to handle the parts of the work that don't require human judgment.</p>
+  <p>If you're running a service business—even a stupid simple one—AI can handle:</p>
+  <ul>
+  <li><strong>Lead qualification and intake.</strong> An AI agent can screen inquiries, collect information, and only escalate to you the qualified leads.</li>
+  <li><strong>Scheduling and follow-up.</strong> No more back-and-forth emails. An agent handles calendar management and sends reminders.</li>
+  <li><strong>Invoicing and payment collection.</strong> Automated, on time, no excuses.</li>
+  <li><strong>Customer feedback and reviews.</strong> An agent can follow up post-job and ask for reviews.</li>
+  </ul>
+  <p>None of this makes your business more complex. It just removes the friction that makes you want to quit.</p>
+  <h2>What to Actually Do This Week</h2>
+  <p>If you're serious about starting something stupidly simple, here's the move:</p>
+  <ol>
+  <li>
+  <p><strong>Pick a service you can do yourself.</strong> Something where you can make $100-200 per hour. Something local, where you can get 3-5 customers in your first month without any marketing budget.</p>
+  </li>
+  <li>
+  <p><strong>Do 10 jobs yourself.</strong> Not to "validate the market." To actually understand the work. Time everything. Find the bottlenecks.</p>
+  </li>
+  <li>
+  <p><strong>Charge real money.</strong> Don't undercut. Don't compete on price. Compete on reliability and quality. Raise your price by 20% and see what happens.</p>
+  </li>
+  <li>
+  <p><strong>Set up the boring infrastructure.</strong> Invoice template. Payment processor. Simple CRM (or a spreadsheet, honestly). Calendar system. That's it.</p>
+  </li>
+  <li>
+  <p><strong>Hire or delegate the parts you hate.</strong> Once you understand the work, you can hire someone to do the parts that drain you.</p>
+  </li>
+  </ol>
+  <p>The businesses that fail aren't the ones that are too simple. They're the ones where the founder is bored after three months and starts chasing the next shiny idea.</p>
+  <p>If you're asking "what's the stupidest business I can't fuck up," you're actually asking the right question. Because the answer is: pick something where the customer need is so obvious and the money is so clear that you can't hide from the reality of whether it's working.</p>
+  <p>That's not boring. That's freedom.</p>
+  <p>Start there. Build something that actually makes money. Then, if you want, you can get clever.</p>
+  </div>`,
+    date: '2026-05-01',
+    readTime: '6 min read',
+    category: 'Founder Notes',
+    author: 'The Exiled Entrepreneur',
+    featuredImage: '/blog/what-is-the-stupidest-simplest-business-i-cannot-possibly-fuck-up.png',
+    youtubeId: ''
+  },
+  {
     slug: 'why-building-empire-after-layoff',
     title: "Why I'm Building an Empire After Getting Laid Off",
     excerpt:
