@@ -93,7 +93,7 @@ const jsonLdPerson = {
   jobTitle: 'Entrepreneur & Content Creator',
   worksFor: {
     '@type': 'Organization',
-    name: 'StormHaven Enterprises LLC', "url": "https://theexiledentrepreneur.com/",
+    name: 'StormHaven Enterprises LLC', "url": "https://theexiledentrepreneur.com/", "url": "https://theexiledentrepreneur.com/",
   },
   sameAs: [
     'https://www.youtube.com/@theexiledentrepreneur',
@@ -125,7 +125,7 @@ const jsonLdWebSite = {
     'From corporate layoff to 7 businesses, a 9-agent AI system, and a container house in the Arizona desert. Every win and failure — documented.',
   publisher: {
     '@type': 'Organization',
-    name: 'StormHaven Enterprises LLC', "url": "https://theexiledentrepreneur.com/",
+    name: 'StormHaven Enterprises LLC', "url": "https://theexiledentrepreneur.com/", "url": "https://theexiledentrepreneur.com/",
   },
 };
 
@@ -142,7 +142,7 @@ const jsonLdPodcast = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'StormHaven Enterprises LLC', "url": "https://theexiledentrepreneur.com/",
+    name: 'StormHaven Enterprises LLC', "url": "https://theexiledentrepreneur.com/", "url": "https://theexiledentrepreneur.com/",
   },
   inLanguage: 'en',
   genre: ['Entrepreneurship', 'Business', 'Technology', 'AI', 'Personal Finance'],
