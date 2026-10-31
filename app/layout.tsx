@@ -3,6 +3,15 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import {
+  AUTHOR_NAME,
+  GITHUB_URL,
+  LEGAL_ENTITY,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_TAGLINE,
+  SITE_URL,
+} from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,53 +23,53 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const defaultTitle = `${SITE_NAME} | ${SITE_TAGLINE}`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://theexiledentrepreneur.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "The Exiled Entrepreneur | One Guy. Laid Off. Building an Empire.",
-    template: "%s | The Exiled Entrepreneur",
+    default: defaultTitle,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "From corporate layoff to 7 businesses, a 9-agent AI system, and a container house in the Arizona desert. Every win and failure — documented.",
+  description: SITE_DESCRIPTION,
   keywords: [
-    "entrepreneurship",
-    "AI automation",
-    "business empire",
-    "layoff recovery",
-    "container house",
-    "off-grid living",
-    "drones",
-    "founder journey",
-    "Open Claw IA",
-    "Stormhaven Enterprises",
-    "YouTube documentary",
-    "AI agents",
+    "off-grid power",
+    "solar battery system",
+    "EG4 inverter",
+    "rural internet",
+    "remote work off-grid",
+    "container home",
+    "owner-builder permit",
+    "Cochise County",
+    "Arizona land",
+    "drone services",
+    "Part 107",
+    "digital products",
+    "layoff",
   ],
-  authors: [{ name: "Joshua", url: "https://theexiledentrepreneur.com" }],
-  creator: "Stormhaven Enterprises LLC",
-  publisher: "Stormhaven Enterprises LLC",
+  authors: [{ name: AUTHOR_NAME, url: `${SITE_URL}/about` }],
+  creator: AUTHOR_NAME,
+  publisher: LEGAL_ENTITY,
   openGraph: {
-    title: "The Exiled Entrepreneur | One Guy. Laid Off. Building an Empire.",
-    description:
-      "From corporate layoff to 7 businesses, a 9-agent AI system, and a container house in the Arizona desert. Every win and failure — documented.",
+    title: defaultTitle,
+    description: SITE_DESCRIPTION,
     type: "website",
-    url: "https://theexiledentrepreneur.com",
-    siteName: "The Exiled Entrepreneur",
+    url: SITE_URL,
+    siteName: SITE_NAME,
     locale: "en_US",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "The Exiled Entrepreneur — One Guy. Laid Off. Building an Empire.",
+        alt: `${SITE_NAME} — ${SITE_TAGLINE}`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Exiled Entrepreneur",
-    description:
-      "From corporate layoff to 7 businesses, a 9-agent AI system, and a container house in the Arizona desert.",
+    title: defaultTitle,
+    description: SITE_DESCRIPTION,
     images: ["/og-image.svg"],
   },
   robots: {
@@ -75,7 +84,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://theexiledentrepreneur.com",
+    canonical: SITE_URL,
   },
 };
 
@@ -86,67 +95,45 @@ export const viewport: Viewport = {
 };
 
 const jsonLdPerson = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Joshua',
-  url: 'https://theexiledentrepreneur.com/about',
-  jobTitle: 'Entrepreneur & Content Creator',
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: AUTHOR_NAME,
+  url: `${SITE_URL}/about`,
+  jobTitle: "Support engineer, owner-builder",
   worksFor: {
-    '@type': 'Organization',
-    name: 'StormHaven Enterprises LLC', "url": "https://theexiledentrepreneur.com/",
+    "@type": "Organization",
+    name: LEGAL_ENTITY,
+    url: SITE_URL,
   },
-  sameAs: [
-    'https://www.youtube.com/@theexiledentrepreneur',
-    'https://twitter.com/theexiledent',
-  ],
+  sameAs: [GITHUB_URL],
 };
 
 const jsonLdOrganization = {
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'The Exiled Entrepreneur',
-  legalName: 'StormHaven Enterprises LLC',
-  url: 'https://theexiledentrepreneur.com',
-  logo: 'https://theexiledentrepreneur.com/og-image.svg',
-  description:
-    'Podcast and brand about entrepreneurship, business building, and the journey of creating multiple ventures. Hosted by Joshua, documenting the real-time building of a multi-business empire.',
-  sameAs: [
-    'https://www.youtube.com/@theexiledentrepreneur',
-    'https://twitter.com/theexiledent',
-  ],
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE_NAME,
+  legalName: LEGAL_ENTITY,
+  url: SITE_URL,
+  logo: `${SITE_URL}/og-image.svg`,
+  description: SITE_DESCRIPTION,
+  founder: { "@type": "Person", name: AUTHOR_NAME },
 };
 
 const jsonLdWebSite = {
-  '@context': 'https://schema.org',
-  '@type': 'WebSite',
-  name: 'The Exiled Entrepreneur',
-  url: 'https://theexiledentrepreneur.com',
-  description:
-    'From corporate layoff to 7 businesses, a 9-agent AI system, and a container house in the Arizona desert. Every win and failure — documented.',
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_NAME,
+  url: SITE_URL,
+  description: SITE_DESCRIPTION,
+  inLanguage: "en-US",
   publisher: {
-    '@type': 'Organization',
-    name: 'StormHaven Enterprises LLC', "url": "https://theexiledentrepreneur.com/",
+    "@type": "Organization",
+    name: LEGAL_ENTITY,
+    url: SITE_URL,
   },
 };
 
-const jsonLdPodcast = {
-  '@context': 'https://schema.org',
-  '@type': 'PodcastSeries',
-  name: 'The Exiled Entrepreneur',
-  url: 'https://theexiledentrepreneur.com/episodes',
-  description:
-    'A podcast and documentary YouTube series about entrepreneurship, AI automation, off-grid living, and the real journey of building multiple businesses after a corporate layoff.',
-  author: {
-    '@type': 'Person',
-    name: 'Joshua',
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'StormHaven Enterprises LLC', "url": "https://theexiledentrepreneur.com/",
-  },
-  inLanguage: 'en',
-  genre: ['Entrepreneurship', 'Business', 'Technology', 'AI', 'Personal Finance'],
-};
+const serialize = (o: unknown) => JSON.stringify(o).replace(/</g, "\\u003c");
 
 export default function RootLayout({
   children,
@@ -161,24 +148,28 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
+          dangerouslySetInnerHTML={{ __html: serialize(jsonLdPerson) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }}
+          dangerouslySetInnerHTML={{ __html: serialize(jsonLdOrganization) }}
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebSite) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPodcast) }}
+          dangerouslySetInnerHTML={{ __html: serialize(jsonLdWebSite) }}
         />
       </head>
       <body className="min-h-screen flex flex-col bg-brand-dark text-brand-cream">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:rounded focus:bg-brand-gold focus:px-3 focus:py-2 focus:text-brand-dark"
+        >
+          Skip to content
+        </a>
         <Navigation />
-        <main className="flex-1">{children}</main>
+        <main id="main" className="flex-1">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
