@@ -47,6 +47,20 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async redirects() {
+    // Retired routes from the previous (video/podcast-oriented) version of
+    // the site. Explicit 301 rather than `permanent: true` (308) so older
+    // clients and link checkers see a classic permanent redirect.
+    return [
+      { source: '/episodes', destination: '/articles', statusCode: 301 },
+      { source: '/episodes/:path*', destination: '/articles', statusCode: 301 },
+      { source: '/resources', destination: '/the-build', statusCode: 301 },
+      { source: '/resources/:path*', destination: '/the-build', statusCode: 301 },
+      { source: '/media-kit', destination: '/about', statusCode: 301 },
+      { source: '/blog', destination: '/articles', statusCode: 301 },
+      { source: '/blog/:path*', destination: '/articles', statusCode: 301 },
+    ];
+  },
 };
 
 export default nextConfig;
