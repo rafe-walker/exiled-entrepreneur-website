@@ -31,7 +31,7 @@ export default function PrivacyClient() {
             <section>
               <h2 className="text-2xl font-bold text-brand-cream mb-4">Introduction</h2>
               <p>
-                The Exiled Entrepreneur ("we," "us," "our," or "Company"), operated by Stormhaven Enterprises LLC, operates theexiledentrepreneur.com (the "Site"). This Privacy Policy explains how we collect, use, disclose, and otherwise handle your information when you visit our Site, use our services, or interact with us in any way.
+                The Exiled Entrepreneur (&quot;we,&quot; &quot;us,&quot; &quot;our,&quot; or &quot;Company&quot;), operated by Stormhaven Enterprises LLC, operates theexiledentrepreneur.com (the &quot;Site&quot;). This Privacy Policy explains how we collect, use, disclose, and otherwise handle your information when you visit our Site, use our services, or interact with us in any way.
               </p>
             </section>
 
@@ -44,8 +44,8 @@ export default function PrivacyClient() {
               <ul className="list-disc list-inside space-y-2 ml-2 mb-4">
                 <li>Contact information (name, email address, phone number)</li>
                 <li>Communication and inquiry details when you contact us</li>
-                <li>Newsletter and subscription preferences</li>
-                <li>Form submission data from our contact, media kit, and other pages</li>
+                <li>The contents of any email you choose to send us</li>
+                <li>Information you include when you email us via the contact page</li>
                 <li>Payment information (if applicable) processed securely through third-party payment processors</li>
               </ul>
               <p>
@@ -61,7 +61,7 @@ export default function PrivacyClient() {
               <p className="mb-4">We use the information we collect for the following purposes:</p>
               <ul className="list-disc list-inside space-y-2 ml-2">
                 <li>Respond to inquiries, provide customer support, and communicate with you</li>
-                <li>Send newsletters, updates, and promotional content (with your consent)</li>
+                <li>Reply to messages you send us</li>
                 <li>Improve, optimize, and enhance our Site and services</li>
                 <li>Analyze usage patterns and trends to better understand our audience</li>
                 <li>Comply with legal obligations and enforce our terms</li>
@@ -91,16 +91,10 @@ export default function PrivacyClient() {
               </p>
               <ul className="list-disc list-inside space-y-3 ml-2">
                 <li>
-                  <strong className="text-brand-cream">YouTube:</strong> Embedded videos may collect viewing data
+                  <strong className="text-brand-cream">Vercel:</strong> Hosting and, where enabled, privacy-friendly web analytics to understand traffic
                 </li>
                 <li>
-                  <strong className="text-brand-cream">Formspree:</strong> Form submissions are processed through Formspree for email delivery
-                </li>
-                <li>
-                  <strong className="text-brand-cream">Vercel Analytics:</strong> Web analytics to understand traffic and user behavior
-                </li>
-                <li>
-                  <strong className="text-brand-cream">Email Services:</strong> Newsletter deliveries processed through email service providers
+                  <strong className="text-brand-cream">Email:</strong> The contact form opens your own email client; messages you send us are handled by our email provider
                 </li>
               </ul>
               <p className="mt-4">
@@ -158,7 +152,7 @@ export default function PrivacyClient() {
                 Changes to This Policy
               </h2>
               <p>
-                We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will notify you of material changes by updating the "Effective Date" at the top of this policy and, when appropriate, by providing additional notice. Your continued use of the Site following changes constitutes your acceptance of the revised policy.
+                We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will notify you of material changes by updating the &quot;Effective Date&quot; at the top of this policy and, when appropriate, by providing additional notice. Your continued use of the Site following changes constitutes your acceptance of the revised policy.
               </p>
             </section>
 

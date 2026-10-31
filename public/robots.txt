@@ -3,5 +3,4 @@ Allow: /
 
 Sitemap: https://theexiledentrepreneur.com/sitemap.xml
 
-# AI/LLM information
-# https://theexiledentrepreneur.com/llms.txt
+# Site summary for AI crawlers: https://theexiledentrepreneur.com/llms.txt
