@@ -1,245 +1,119 @@
-'use client';
-
 import Link from 'next/link';
-import { motion } from 'framer-motion';
-import {
-  Mail,
-  Youtube,
-  Twitter,
-  Instagram,
-  MessageCircle,
-  ExternalLink,
-  Flame,
-} from 'lucide-react';
+import { Mail, Github, ExternalLink, Flame } from 'lucide-react';
+import { CONTACT_EMAIL, GITHUB_URL, LEGAL_ENTITY, SITE_TAGLINE, VENTURES } from '@/lib/site';
+
+const NAV_LINKS = [
+  { label: 'Articles', href: '/articles' },
+  { label: 'The Build', href: '/the-build' },
+  { label: 'Projects', href: '/projects' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
+];
 
 export default function Footer() {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.6 },
-    },
-  };
-
   return (
     <footer className="bg-brand-dark border-t border-brand-border pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Section: Logo & Tagline */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-12 text-center pb-12 border-b border-brand-border"
-        >
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <motion.div
-              animate={{ rotate: [0, 10, -10, 0] }}
-              transition={{ duration: 4, repeat: Infinity }}
-              className="text-brand-gold"
-            >
-              <Flame size={32} />
-            </motion.div>
-            <h3 className="text-2xl md:text-3xl font-black text-brand-gold tracking-tight">
+        <div className="mb-12 text-center pb-12 border-b border-brand-border">
+          <div className="flex items-center justify-center gap-3 mb-3">
+            <Flame size={28} className="text-brand-gold" aria-hidden="true" />
+            <p className="mb-0 text-xl md:text-2xl font-black text-brand-gold tracking-tight">
               THE EXILED ENTREPRENEUR
-            </h3>
+            </p>
           </div>
-          <p className="text-brand-muted text-base md:text-lg font-medium">
-            Veteran-built. AI-powered. Documented in real time.
-          </p>
-        </motion.div>
+          <p className="mb-0 text-brand-muted text-base">{SITE_TAGLINE}.</p>
+        </div>
 
-        {/* Divider: Gold Gradient Line */}
-        <motion.div
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="h-px bg-gradient-to-r from-transparent via-brand-gold to-transparent mb-12 origin-left"
-        />
-
-        {/* Three-Column Layout */}
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 mb-12"
-        >
-          {/* Column 1: Navigate */}
-          <motion.div variants={itemVariants}>
-            <h4 className="text-lg font-bold text-brand-cream mb-6 flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-brand-gold" />
-              Navigate
-            </h4>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 mb-12">
+          <div>
+            <h2 className="text-base font-bold text-brand-cream mb-5 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-brand-gold" />
+              Site
+            </h2>
             <ul className="space-y-3 text-sm">
-              {[
-                { label: 'About', href: '/about' },
-                { label: 'Episodes', href: '/episodes' },
-                { label: 'Resources', href: '/resources' },
-                { label: 'Blog', href: '/blog' },
-                { label: 'Contact', href: '/contact' },
-              ].map((link, idx) => (
-                <li key={idx}>
+              {NAV_LINKS.map((link) => (
+                <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-brand-muted hover:text-brand-gold transition-colors duration-300 flex items-center gap-2 group"
+                    className="text-brand-muted hover:text-brand-gold transition-colors duration-300"
                   >
                     {link.label}
-                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      →
-                    </span>
                   </Link>
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
-          {/* Column 2: Projects */}
-          <motion.div variants={itemVariants}>
-            <h4 className="text-lg font-bold text-brand-cream mb-6 flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-brand-gold" />
-              Projects
-            </h4>
+          <div>
+            <h2 className="text-base font-bold text-brand-cream mb-5 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-brand-gold" />
+              What I&apos;m building
+            </h2>
             <ul className="space-y-3 text-sm">
-              {[
-                { label: 'Stronghold Precision Aerials', href: '#', external: true },
-                { label: 'Cochise Land Management', href: '#', external: true },
-                { label: 'Flycensed', href: '#', external: true },
-                { label: 'Open Claw IA', href: '#', external: true },
-              ].map((link, idx) => (
-                <li key={idx}>
+              {VENTURES.map((v) => (
+                <li key={v.url}>
                   <a
-                    href={link.href}
-                    target={link.external ? '_blank' : undefined}
-                    rel={link.external ? 'noopener noreferrer' : undefined}
-                    className="text-brand-muted hover:text-brand-gold transition-colors duration-300 flex items-center gap-2 group"
+                    href={v.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand-muted hover:text-brand-gold transition-colors duration-300 inline-flex items-center gap-2 group"
                   >
-                    {link.label}
-                    {link.external && (
-                      <ExternalLink
-                        size={14}
-                        className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      />
-                    )}
+                    {v.name}
+                    <ExternalLink
+                      size={13}
+                      className="opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      aria-hidden="true"
+                    />
                   </a>
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
-          {/* Column 3: Connect */}
-          <motion.div variants={itemVariants}>
-            <h4 className="text-lg font-bold text-brand-cream mb-6 flex items-center gap-2">
-              <div className="w-2 h-2 rounded-full bg-brand-gold" />
-              Connect
-            </h4>
-            <div className="space-y-4">
-              {/* Email Links */}
-              <div className="space-y-2">
+          <div>
+            <h2 className="text-base font-bold text-brand-cream mb-5 flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-brand-gold" />
+              Contact
+            </h2>
+            <ul className="space-y-3 text-sm">
+              <li>
                 <a
-                  href="mailto:contact@theexiledentrepreneur.com"
-                  className="flex items-center gap-2 text-brand-muted hover:text-brand-gold transition-colors duration-300 text-sm group"
+                  href={`mailto:${CONTACT_EMAIL}`}
+                  className="inline-flex items-center gap-2 text-brand-muted hover:text-brand-gold transition-colors duration-300 break-all"
                 >
-                  <Mail size={16} className="group-hover:scale-110 transition-transform duration-300" />
-                  contact@theexiledentrepreneur.com
+                  <Mail size={16} aria-hidden="true" />
+                  {CONTACT_EMAIL}
                 </a>
+              </li>
+              <li>
                 <a
-                  href="mailto:business@theexiledentrepreneur.com"
-                  className="flex items-center gap-2 text-brand-muted hover:text-brand-gold transition-colors duration-300 text-sm group"
+                  href={GITHUB_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-brand-muted hover:text-brand-gold transition-colors duration-300"
                 >
-                  <Mail size={16} className="group-hover:scale-110 transition-transform duration-300" />
-                  business@theexiledentrepreneur.com
+                  <Github size={16} aria-hidden="true" />
+                  github.com/rafe-walker
                 </a>
-              </div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-              {/* Social Icons */}
-              <div className="flex gap-5 pt-2">
-                {[
-                  { icon: Youtube, href: 'https://www.youtube.com/@theexiledentrepreneur', label: 'YouTube', size: 20 },
-                  { icon: Twitter, href: 'https://twitter.com/theexiledent', label: 'Twitter', size: 20 },
-                  { icon: Instagram, href: 'https://www.instagram.com/theexiledentrepreneur', label: 'Instagram', size: 20 },
-                  { icon: MessageCircle, href: '#', label: 'Discord — coming soon', size: 20 },
-                ].map((social, idx) => {
-                  const Icon = social.icon;
-                  return (
-                    <motion.a
-                      key={idx}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={social.label}
-                      whileHover={{ scale: 1.15, rotate: 10 }}
-                      whileTap={{ scale: 0.95 }}
-                      transition={{ duration: 0.2 }}
-                      className="text-brand-muted hover:text-brand-gold transition-colors duration-300 p-2 rounded-full hover:bg-brand-card"
-                    >
-                      <Icon size={social.size} />
-                    </motion.a>
-                  );
-                })}
-              </div>
-            </div>
-          </motion.div>
-        </motion.div>
+        <div className="h-px bg-gradient-to-r from-transparent via-brand-border to-transparent mb-8" />
 
-        {/* Merch Teaser */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-center mb-12 text-brand-dim text-sm font-medium tracking-wide"
-        >
-          Merch — Coming 2026
-        </motion.div>
-
-        {/* Divider */}
-        <motion.div
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="h-px bg-gradient-to-r from-transparent via-brand-border to-transparent mb-8 origin-left"
-        />
-
-        {/* Bottom Bar: Copyright & Links */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm text-brand-muted"
-        >
-          <p>&copy; 2026 Stormhaven Enterprises LLC. All rights reserved.</p>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm text-brand-muted">
+          <p className="mb-0">&copy; {new Date().getFullYear()} {LEGAL_ENTITY}. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link
-              href="/privacy"
-              className="hover:text-brand-gold transition-colors duration-300"
-            >
+            <Link href="/privacy" className="hover:text-brand-gold transition-colors duration-300">
               Privacy
             </Link>
             <span className="text-brand-border">|</span>
-            <Link
-              href="/terms"
-              className="hover:text-brand-gold transition-colors duration-300"
-            >
+            <Link href="/terms" className="hover:text-brand-gold transition-colors duration-300">
               Terms
             </Link>
           </div>
-        </motion.div>
+        </div>
       </div>
     </footer>
   );

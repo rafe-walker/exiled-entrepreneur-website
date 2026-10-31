@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# theexiledentrepreneur.com
 
-## Getting Started
+Next.js 16 (App Router, Turbopack) + Tailwind 4 + framer-motion + lucide. Deployed on Vercel.
 
-First, run the development server:
+Positioning: **technical income from a dead zone** — remote-work power and connectivity, building off-grid, and income that does not depend on location. Every claim on the site must be true and verifiable; numbers the author has not confirmed are written as `[VERIFY: ...]`.
+
+## Develop
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev     # drafts render in dev
+npm run build   # drafts excluded unless NEXT_PUBLIC_SHOW_DRAFTS=1
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Routes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Route | Source |
+| --- | --- |
+| `/` | `app/page.tsx` |
+| `/articles`, `/articles/[slug]` | `app/articles/**`, content from `content/articles/*.md` |
+| `/the-build` | `app/the-build/page.tsx` |
+| `/projects` | `app/projects/page.tsx` (data in `lib/site.ts`) |
+| `/about`, `/contact`, `/privacy`, `/terms` | `app/<route>/page.tsx` |
+| `/sitemap.xml` | `app/sitemap.ts` (static pages + non-draft articles) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Retired routes (`/episodes`, `/resources`, `/media-kit`, `/blog/*`) 301 to their nearest replacement in `next.config.ts`.
 
-## Learn More
+## Articles
 
-To learn more about Next.js, take a look at the following resources:
+Drop a markdown file in `content/articles/<slug>.md`. The file name is the URL slug (lowercase kebab-case). Frontmatter:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```yaml
+---
+title: "..."
+description: "150–160 char meta description"
+date: "2026-11-03"
+updated: "2026-11-03"
+category: "off-grid-power" | "connectivity" | "building" | "land" | "income" | "drones" | "layoff"
+tags: ["eg4", "solar-assistant"]
+draft: true            # drafts: dev only, or NEXT_PUBLIC_SHOW_DRAFTS=1
+targetQuery: "the Google query this article answers"
+---
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Body rules: H2/H3 only (the title is the H1), no HTML, internal links as `/articles/<slug>`, external facts with a source link, unconfirmed numbers as `**[VERIFY: what is needed]**`. H2s become the table of contents. "Related" pulls from the same category.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The loader (`lib/articles.ts`) validates frontmatter at build time and fails the build on a bad file. `content/articles/article-template-smoke-test.md` is a draft that exercises every supported markdown feature; delete it once real articles exist.

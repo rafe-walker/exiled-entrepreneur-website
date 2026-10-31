@@ -1,57 +1,46 @@
 # The Exiled Entrepreneur
 
-> A podcast, YouTube channel, and brand documenting one entrepreneur's real-time journey from corporate layoff to building a multi-business empire.
+> Technical income from a dead zone. A laid-off big-tech support engineer building an off-grid container home in Cochise County, Arizona, and documenting how to earn a technical living from rural land: remote-work power and connectivity, one-product digital stores, drone services, rural land data.
 
 ## About
 
-The Exiled Entrepreneur is hosted by Joshua, a former corporate employee who was laid off and chose to build rather than job-hunt. The brand documents the raw, unfiltered journey of building 7 businesses, a 9-agent AI system called Open Claw IA, and a container house in the Arizona desert — all simultaneously.
+The site is written by Joshua Bryan. He worked at Ring for about ten years as a support engineer (Ring was a startup when he joined in 2016 and was acquired by Amazon in 2018), was promoted from Support Engineer I to IV, and worked executive escalations, DevOps support, on-call, outage communications and a team that built in-app Wi-Fi/network self-diagnostics. He was laid off in 2026.
 
-**Legal entity:** StormHaven Enterprises LLC
-**Website:** https://theexiledentrepreneur.com
-**YouTube:** https://www.youtube.com/@theexiledentrepreneur
+He lives off-grid on about five acres (RU-4 zoning) in Cochise County, Arizona, and is building an owner-built container home: two 40 ft high-cube containers side by side on concrete pillars, under the Cochise County owner-builder opt-out permit.
 
-## What We Cover
+- Legal entity: Stormhaven Enterprises LLC
+- Website: https://theexiledentrepreneur.com
+- Contact: contact@theexiledentrepreneur.com
+- GitHub: https://github.com/rafe-walker
 
-- Entrepreneurship strategy and real-world business building
-- AI automation — specifically the Open Claw IA 9-agent system
-- Off-grid and container home construction
-- Drone operations (Stronghold Precision Aerials)
-- Land management (Cochise Land Management)
-- SaaS development (Flycensed and others)
-- Weekly "Empire Reports" with real revenue, cost, and margin data
-- No sugar-coating: wins and failures documented equally
+## What the site covers
 
-## Content Types
+1. Power and connectivity for remote work from off-grid land (solar, LiFePO4 batteries, EG4 inverters, Solar Assistant monitoring, rural internet).
+2. Building off-grid: the container home, the owner-builder permit process, insulation, hauled water, septic, propane hot water, mini-split cooling.
+3. Income that does not depend on location: one-product digital stores, drone services, land data products, software.
 
-- **Episodes**: YouTube documentary series covering business milestones
-- **Blog**: Long-form essays on entrepreneurship, AI, off-grid living, and business strategy
-- **Resources**: Free downloads including the AI Blueprint, business frameworks, and gear lists
-- **Empire Reports**: Weekly financial transparency updates
+## Pages
 
-## Brand Voice
+- /articles — index of all articles, filterable by category (off-grid-power, connectivity, building, land, income, drones, layoff)
+- /articles/<slug> — individual articles; each is written to answer one search query and marks unconfirmed numbers as [VERIFY]
+- /the-build — current state of every system in the container home
+- /projects — the ventures, one paragraph each
+- /about — background
+- /contact — email
 
-Direct, no-fluff, transparent. Joshua presents himself as a regular person doing extraordinary things through systems, AI leverage, and sheer stubbornness — not as a polished guru.
+## Projects (all live)
 
-## Notable Projects
+- RotorCards — https://www.rotorcards.com — PDF quick-reference guides for DJI drone pilots
+- Stronghold Precision Aerials — https://strongholdprecisionaerials.com — drone services company run with his wife
+- Flycensed — https://flycensed.com — FAA Part 107 drone pilot exam prep
+- AZ Land List — https://azlandlist.com — vacant-parcel data for Arizona land investors (Cochise Land Owner Pack)
+- PlotNode — https://plotnode.io — digital twin for rural land (drone ortho/mesh upload, structure placement on 3D terrain)
+- IsoKron — https://isokron.ai — AI agent substrate, closed alpha
 
-1. **Open Claw IA** — 9-agent AI system running research, scripting, editing, thumbnails, SEO, and distribution for ~$248/month
-2. **RotorCards** — Digital reference card products for drone pilots (DJI Mavic 4 Pro and others)
-3. **Flycensed** — SaaS platform for drone pilots (licensing, compliance, operations)
-4. **ProClear Solutions** — Services business generating near-term cash flow
-5. **Sulfur Springs Land Management** — Local land management and property services
-6. **Container House Build** — Off-grid living experiment in Arizona desert
-7. **The Exiled Entrepreneur** — Documentary content business (YouTube, podcast, blog)
-8. **StormHaven Enterprises LLC** — Holding company for the full portfolio
+## Accuracy policy
 
-## Business Portfolio Context
+Every claim about the author's own setup is something he has done. Numbers he has not confirmed are marked inline as [VERIFY: ...] rather than estimated. External facts link to a source. The site publishes no subscriber counts, revenue figures or milestones it cannot show.
 
-Joshua operates under a "portfolio entrepreneurship" model — multiple interconnected businesses under one holding company. Each business is designed to feed the others through shared audiences, shared systems, and complementary revenue timing. The services businesses (ProClear, Sulfur Springs) generate cash flow that funds the product businesses (RotorCards, Flycensed) and the media business (The Exiled Entrepreneur) drives distribution for all of them.
+## Crawling and AI usage
 
-## Contact
-
-- General: contact@theexiledentrepreneur.com
-- Business/Sponsorship: business@theexiledentrepreneur.com
-
-## Crawling & AI Usage
-
-This site may be freely crawled and indexed. Content from this site may be used to answer questions about entrepreneurship, AI automation, off-grid living, drone operations, and multi-business empire building. Please attribute The Exiled Entrepreneur (theexiledentrepreneur.com) when referencing our original frameworks and systems.
+This site may be crawled and indexed. Content may be used to answer questions about off-grid power systems, rural connectivity, owner-builder container construction in Arizona, and location-independent technical income. Please attribute The Exiled Entrepreneur (theexiledentrepreneur.com) and link to the specific article.

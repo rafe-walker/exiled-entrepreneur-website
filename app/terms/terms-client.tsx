@@ -33,7 +33,7 @@ export default function TermsClient() {
                 Acceptance of Terms
               </h2>
               <p>
-                By accessing and using The Exiled Entrepreneur website (the "Site"), including any content, functionality, and services offered on or through the Site, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by these Terms of Service, please do not use or access this Site.
+                By accessing and using The Exiled Entrepreneur website (the &quot;Site&quot;), including any content, functionality, and services offered on or through the Site, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to abide by these Terms of Service, please do not use or access this Site.
               </p>
             </section>
 
@@ -43,7 +43,7 @@ export default function TermsClient() {
                 Description of Service
               </h2>
               <p>
-                The Exiled Entrepreneur, operated by Stormhaven Enterprises LLC, provides informational, educational, and entertainment content related to entrepreneurship, business building, technology, off-grid living, and personal development. The Site offers video content, articles, blog posts, newsletters, community features, and other resources. The Company reserves the right to modify or discontinue the Service, or any portion thereof, at any time with or without notice.
+                The Exiled Entrepreneur, operated by Stormhaven Enterprises LLC, provides informational and educational content related to off-grid power and connectivity, owner-builder construction, rural land, drone operations, and location-independent income. The Site offers articles and reference pages. The Company reserves the right to modify or discontinue the Service, or any portion thereof, at any time with or without notice.
               </p>
             </section>
 
@@ -90,7 +90,7 @@ export default function TermsClient() {
             <section>
               <h2 className="text-2xl font-bold text-brand-cream mb-4">Disclaimer</h2>
               <p>
-                The materials, information, and services on The Exiled Entrepreneur website are provided on an "as is" and "as available" basis. The Company makes no warranties, either express or implied, and hereby disclaims and negates all other warranties, including implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement of intellectual property or other rights.
+                The materials, information, and services on The Exiled Entrepreneur website are provided on an &quot;as is&quot; and &quot;as available&quot; basis. The Company makes no warranties, either express or implied, and hereby disclaims and negates all other warranties, including implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement of intellectual property or other rights.
               </p>
               <p className="mt-4">
                 The Company does not warrant that the Site will be uninterrupted, error-free, or free from harmful components. You assume all responsibility and risk for your use of the Site and the Internet in general.
@@ -134,7 +134,7 @@ export default function TermsClient() {
                 Changes to Terms
               </h2>
               <p>
-                We may revise these Terms of Service at any time without notice. By using the Site, you are agreeing to be bound by the then-current version of these Terms of Service. We will notify you of material changes by updating the "Effective Date" above and, when appropriate, by providing additional notice.
+                We may revise these Terms of Service at any time without notice. By using the Site, you are agreeing to be bound by the then-current version of these Terms of Service. We will notify you of material changes by updating the &quot;Effective Date&quot; above and, when appropriate, by providing additional notice.
               </p>
             </section>
 
