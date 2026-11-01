@@ -48,13 +48,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       authors: [`${SITE_URL}/about`],
       section: CATEGORY_LABELS[article.category],
       tags: article.tags,
-      images: [{ url: '/og-image.svg', width: 1200, height: 630, alt: SITE_NAME }],
+      images: [{ url: `${url}/og.png`, type: 'image/png', width: 1200, height: 630, alt: article.title }],
     },
     twitter: {
       card: 'summary_large_image',
       title: article.title,
       description: article.description,
-      images: ['/og-image.svg'],
+      images: [`${url}/og.png`],
     },
   };
 }
@@ -79,7 +79,7 @@ export default async function ArticlePage({ params }: Props) {
     inLanguage: 'en-US',
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
     url,
-    image: `${SITE_URL}/og-image.svg`,
+    image: `${url}/og.png`,
     author: {
       '@type': 'Person',
       name: AUTHOR_NAME,
@@ -89,7 +89,7 @@ export default async function ArticlePage({ params }: Props) {
       '@type': 'Organization',
       name: LEGAL_ENTITY,
       url: SITE_URL,
-      logo: { '@type': 'ImageObject', url: `${SITE_URL}/og-image.svg` },
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/og.png` },
     },
   };
 

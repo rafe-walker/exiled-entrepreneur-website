@@ -59,6 +59,9 @@ const nextConfig: NextConfig = {
       { source: '/media-kit', destination: '/about', statusCode: 301 },
       { source: '/blog', destination: '/articles', statusCode: 301 },
       { source: '/blog/:path*', destination: '/articles', statusCode: 301 },
+      // Feed alias and the retired SVG share card (X/Slack/LinkedIn need PNG).
+      { source: '/feed.xml', destination: '/rss.xml', statusCode: 301 },
+      { source: '/og-image.svg', destination: '/og.png', statusCode: 301 },
     ];
   },
 };

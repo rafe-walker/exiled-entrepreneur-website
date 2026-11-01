@@ -25,6 +25,8 @@ He lives off-grid on about five acres (RU-4 zoning) in Cochise County, Arizona, 
 - /articles/<slug> — individual articles; each is written to answer one search query and marks unconfirmed numbers as [VERIFY]
 - /the-build — current state of every system in the container home
 - /projects — the ventures, one paragraph each
+- /tools — browser calculators; /tools/starlink-battery-calculator gives Starlink dish battery runtime, Wh/day and bank size for 24 h from Starlink's published spec-sheet power figures
+- /rss.xml — RSS 2.0 feed of published articles
 - /about — background
 - /contact — email
 
