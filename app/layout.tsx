@@ -59,7 +59,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og.png",
+        type: "image/png",
         width: 1200,
         height: 630,
         alt: `${SITE_NAME} — ${SITE_TAGLINE}`,
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: defaultTitle,
     description: SITE_DESCRIPTION,
-    images: ["/og-image.svg"],
+    images: ["/og.png"],
   },
   robots: {
     index: true,
@@ -83,9 +84,10 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  alternates: {
-    canonical: SITE_URL,
-  },
+  // No root-level `alternates`: canonical URLs are set per page (a root
+  // canonical would leak the home URL onto any page that forgets to override
+  // it), and the RSS <link> lives in <head> below because a page's own
+  // `alternates.canonical` replaces the whole `alternates` object.
 };
 
 export const viewport: Viewport = {
@@ -114,7 +116,7 @@ const jsonLdOrganization = {
   name: SITE_NAME,
   legalName: LEGAL_ENTITY,
   url: SITE_URL,
-  logo: `${SITE_URL}/og-image.svg`,
+  logo: `${SITE_URL}/og.png`,
   description: SITE_DESCRIPTION,
   founder: { "@type": "Person", name: AUTHOR_NAME },
 };
@@ -146,6 +148,12 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} scroll-smooth`}
     >
       <head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={`${SITE_NAME} articles`}
+          href={`${SITE_URL}/rss.xml`}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: serialize(jsonLdPerson) }}

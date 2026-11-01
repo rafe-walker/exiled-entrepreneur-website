@@ -22,9 +22,12 @@ npm run lint
 | `/the-build` | `app/the-build/page.tsx` |
 | `/projects` | `app/projects/page.tsx` (data in `lib/site.ts`) |
 | `/about`, `/contact`, `/privacy`, `/terms` | `app/<route>/page.tsx` |
+| `/tools`, `/tools/starlink-battery-calculator` | `app/tools/**`; dish figures and formula in `lib/starlink.ts`, UI in `components/StarlinkBatteryCalculator.tsx` |
 | `/sitemap.xml` | `app/sitemap.ts` (static pages + non-draft articles) |
+| `/rss.xml` | `app/rss.xml/route.ts` (RSS 2.0, non-draft articles; `/feed.xml` 301s here) |
+| `/og.png`, `/articles/[slug]/og.png` | `app/**/og.png/route.tsx`, rendered at build by `next/og` from `lib/og.tsx` |
 
-Retired routes (`/episodes`, `/resources`, `/media-kit`, `/blog/*`) 301 to their nearest replacement in `next.config.ts`.
+Retired routes (`/episodes`, `/resources`, `/media-kit`, `/blog/*`) 301 to their nearest replacement in `next.config.ts`, as does the old `/og-image.svg` share card.
 
 ## Articles
 
